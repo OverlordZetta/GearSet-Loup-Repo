@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Direct_Channel_No_Name_Update</fullName>
+    <active>true</active>
+    <description>Prevents updating name when type is cutomer direct or customer channel</description>
+    <errorConditionFormula>AND( 
+OR(ISPICKVAL(Type , &#39;Customer - Direct&#39;) ,ISPICKVAL(Type , &#39;Customer - Channel&#39;)),
+ISCHANGED(Name) 
+)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Please you can&#39;t change name when type is Customer - Direct or Customer - Channel</errorMessage>
+</ValidationRule>

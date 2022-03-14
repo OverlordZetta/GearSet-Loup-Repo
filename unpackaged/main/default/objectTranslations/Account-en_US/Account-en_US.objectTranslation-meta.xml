@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Sales Region --></label>
+            <section>Sales Region</section>
+        </sections>
+        <sections>
+            <label><!-- Support Plan Information --></label>
+            <section>Support Plan Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Account Layout</layout>
+        <sections>
+            <label><!-- Sales Region --></label>
+            <section>Sales Region</section>
+        </sections>
+        <sections>
+            <label><!-- Support Plan Information --></label>
+            <section>Support Plan Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Business Account --></label>
+        <name>Business_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For customers and prospects --></description>
+        <label><!-- Customer Account --></label>
+        <name>Customer_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For consulting partners --></description>
+        <label><!-- Partner Account --></label>
+        <name>Partner_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Account page for creating volunteer organizations --></description>
+        <label><!-- Volunteer Organization Account --></label>
+        <name>Volunteer_Organization_Account</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please you can&apos;t change name when type is Customer - Direct or Customer - Channel --></errorMessage>
+        <name>Customer_Direct_Channel_No_Name_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter an expiration date when an account has a support plan. --></errorMessage>
+        <name>Support_plan_expiration_date_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Billing Country must be either US, USA, United States or left blank. --></errorMessage>
+        <name>Us_Billing_Country</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing state must be 2 character long and must be a valable US State. --></errorMessage>
+        <name>Us_Billing_State</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Shipping Country must be either US, USA, United States or left blank. --></errorMessage>
+        <name>Us_Shiping_Country</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing state must be 2 character long and must be a valable US State. --></errorMessage>
+        <name>Us_Shipping_State</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Billing --></label>
+        <name>Billing</name>
+    </webLinks>
+</CustomObjectTranslation>

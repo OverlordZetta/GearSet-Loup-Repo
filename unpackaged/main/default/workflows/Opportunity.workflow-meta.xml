@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Approval_Status</fullName>
+        <description>Approval Status Deny</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>integration@00d2e000000mwnvuay.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>RB_Robotics_Templates/Sales_Opportunity_Approval_Status_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Approval_Statuts_Okay</fullName>
+        <description>Approval Statuts Okay</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>integration@00d2e000000mwnvuay.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>RB_Robotics_Templates/Sales_Opportunity_Approval_Status_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Win_Deal</fullName>
+        <description>Win Deal</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>integration@00d2e000000mwnvuay.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>RB_Robotics_Templates/Finance_Account_Creation</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Move_back_to_stage</fullName>
+        <field>StageName</field>
+        <literalValue>Negotiation/Review</literalValue>
+        <name>Move back to stage</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_approved_to_true</fullName>
+        <field>Approved__c</field>
+        <literalValue>1</literalValue>
+        <name>Set approved to true</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Stage_waiting_for_approval</fullName>
+        <field>StageName</field>
+        <literalValue>Awaiting Approval</literalValue>
+        <name>Stage waiting for approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

@@ -1,0 +1,24 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <aura:attribute name="contentVersion" type="ContentVersion"/>
+    
+    
+    
+    <lightning:recordEditForm aura:id="myCVForm" objectApiName="ContentVersion" recordId="0682E00000Lq2ggQAB">
+                            
+        
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+                <span>is the title :  </span>
+            </div>
+            <div class="slds-col">
+                <span>        
+                    <lightning:inputField fieldName="Valid__c" onchange="{!c.submitForm}" />
+                </span>
+            </div>
+        </div>
+        
+        
+    </lightning:recordEditForm>
+     
+	
+</aura:component>

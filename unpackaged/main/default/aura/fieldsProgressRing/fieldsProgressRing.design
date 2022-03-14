@@ -1,0 +1,7 @@
+<design:component>
+	
+	<design:attribute name="fields" 
+                      label="Fields to check"
+                      required="true" description="Please indicate the fields 
+                                                   to check in a comma separeted string. (Use the field API Names)"/>
+</design:component>

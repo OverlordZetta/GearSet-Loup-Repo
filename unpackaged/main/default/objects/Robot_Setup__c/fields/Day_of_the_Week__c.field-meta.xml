@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Day_of_the_Week__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(WEEKDAY( Date__c ), 1, &#39;Sunday&#39;, 2, &#39;Monday&#39;,3, &#39;Tuesday&#39;, 4, &#39;Wednesday&#39;, 5, &#39;Thursday&#39;, 6, &#39;Friday&#39;, 7, &#39;Saturday&#39;, &#39;Not found&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Day of the Week</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

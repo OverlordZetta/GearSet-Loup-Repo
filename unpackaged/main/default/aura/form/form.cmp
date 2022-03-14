@@ -1,0 +1,14 @@
+<aura:component implements="force:hasSObjectName,flexipage:availableForRecordHome,force:hasRecordId,lightning:availableForFlowScreens">
+            <aura:attribute name="fields" type="String[]" default="['Name','AnnualRevenue','Industry']" />
+    		<aura:attribute name="recordId" type="String" access="global" />
+    <aura:attribute name="targetObject" type="String" default="{!v.sObjectName}" />
+            <lightning:notificationsLibrary aura:id="notifLib"/>
+
+            <lightning:recordEditForm 
+                    recordId="{!v.recordId}"
+                    objectApiName="{!v.targetObject}">
+  
+     <lightning:inputField fieldName="Name" />
+                
+    	</lightning:recordEditForm>
+</aura:component>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_for_100000_and_UP</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Amount &gt; 100000 , Approved__c &lt;&gt; TRUE , IsClosed = TRUE)</errorConditionFormula>
+    <errorMessage>Please you can&#39;t close big opportunities if not approved, wait for an approver to approve this opportunity.</errorMessage>
+</ValidationRule>

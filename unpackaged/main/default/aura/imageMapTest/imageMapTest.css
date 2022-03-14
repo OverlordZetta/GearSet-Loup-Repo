@@ -1,0 +1,56 @@
+.THIS .container {
+    color:black;
+    font-size:20px;
+    position: relative;
+    color: white;
+}
+
+.THIS .arrivPrimaire {
+    color:black;
+    position: absolute;
+    top: 70px;
+    left: 455px;
+}
+
+
+.THIS .departSecondaire {
+    color:black;
+    position: absolute;
+    top: 70px;
+    left: 910px;
+}
+
+
+
+.THIS .retourSecondaire {
+    color:black;
+    position: absolute;
+    top: 500px;
+    left: 900px;
+}
+
+
+
+.THIS .retourPrimaireDebit {
+    color:black;
+    position: absolute;
+    top: 510px;
+    left: 175px;
+}
+
+
+
+.THIS .retourPrimaireTemperature {
+    color:black;
+    position: absolute;
+    top: 510px;
+    left: 315px;
+}
+
+
+.THIS .tauxOuvertureVanne {
+    color:black;
+    position: absolute;
+    top: 340px;
+    left: 455px;
+}

@@ -1,0 +1,5 @@
+<design:component>
+	<design:attribute name="recordId" label="Record Id" />
+    <design:attribute name="targetObject" label="Object Name (Leave Empty when context exists)"/>
+
+</design:component>

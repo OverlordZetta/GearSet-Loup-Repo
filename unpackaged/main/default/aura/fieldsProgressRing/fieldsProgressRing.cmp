@@ -1,0 +1,33 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <!--Getting the account -->
+    <aura:attribute name="record" type="Object"
+                    description="The record object to be displayed"/>
+    <aura:attribute name="fieldValues" type="Object"
+                    description="A simplified view record object to be displayed"/>
+    <aura:attribute name="recordErrorAcc" type="String"	
+                    description="An error message bound to force:recordData"/>
+    
+    <aura:attribute name="fields" type="String"
+                    description="Comma separated list of Fields API_Name" />
+    
+    <aura:attribute name="fieldsList" type="String[]"
+                    description="Comma separated list of Fields API_Name" default="Id"/>
+    
+    <aura:attribute name="totalFieldNumber" type="Integer"/>
+    
+    <aura:attribute name="percent" type="Integer"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+        <force:recordData aura:id="recordData"
+                          fields="{!v.fieldsList}" 
+                          recordId="{!v.recordId}"
+                          targetError="{!v.recordErrorAcc}"
+                          targetRecord="{!v.record}"
+                          targetFields="{!v.fieldValues}"
+                          recordUpdated="{!c.handleRecordUpdated}"
+                          mode="VIEW"/>
+    
+    <lightning:progressRing value="{!v.percent}" variant="base-autocomplete" />
+    
+</aura:component>

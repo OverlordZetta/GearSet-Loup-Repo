@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Us_Shiping_Country</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(OR(ShippingCountry=&#39;US&#39;,ShippingCountry=&#39;USA&#39;,ShippingCountry=&#39;United States&#39;, ISBLANK(ShippingCountry)))</errorConditionFormula>
+    <errorDisplayField>ShippingCountry</errorDisplayField>
+    <errorMessage>Please Shipping Country must be either US, USA, United States or left blank.</errorMessage>
+</ValidationRule>

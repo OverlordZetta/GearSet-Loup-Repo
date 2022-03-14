@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Access to Standard Einstein Activity Capture</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Standard Einstein Activity Capture</label>
+    <license>StandardEinsteinActivityCapturePsl</license>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>StdAutomaticActivityCapture</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ViewOnlyEmbeddedAppUser</name>
+    </userPermissions>
+</PermissionSet>

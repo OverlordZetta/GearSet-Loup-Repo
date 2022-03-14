@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Us_Billing_State</fullName>
+    <active>true</active>
+    <errorConditionFormula>!CONTAINS(BillingState,&quot;AL:AK:AZ:AR:CA:CO:CT:DE:DC:FL:GA:HI:ID:IL:IN:IA:KS:KY:LA:ME:MD:MA:MI:MN:MS:MO:MT:NE:NV:NH:NJ:NM:NY:NC:ND:OH:OK:OR:PA:RI:SC:SD:TN:TX:UT:VT:VA:WA:WV:WI:WY:PR&quot;) &amp;&amp; LEN(BillingState)  &lt;&gt; 2</errorConditionFormula>
+    <errorDisplayField>BillingState</errorDisplayField>
+    <errorMessage>Billing state must be 2 character long and must be a valable US State.</errorMessage>
+</ValidationRule>
